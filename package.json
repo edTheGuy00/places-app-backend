@@ -21,6 +21,8 @@
     "nodemon": "^1.17.3"
   },
   "dependencies": {
-    "graphql-yoga": "^1.8.5"
+    "graphql-yoga": "^1.8.5",
+    "request": "^2.85.0",
+    "request-promise": "^4.2.2"
   }
 }
