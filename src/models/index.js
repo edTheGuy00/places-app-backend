@@ -1,12 +1,18 @@
 import Sequelize from 'sequelize';
 
-const sequelize = new Sequelize({
-  dialect: 'postgres',
-  operatorsAliases: Sequelize.Op,
-  define: {
-    underscored: true,
+const sequelize = new Sequelize(
+  'dens2n6hcm9akh',
+  'rfulnxttizuctl',
+  'd32f1bcfc87d506a6b928621e31286953815f0897f8f6b990409128acda90069', {
+    native: true,
+  }, {
+    dialect: 'postgres',
+    operatorsAliases: Sequelize.Op,
+    define: {
+      underscored: true,
+    },
   },
-});
+);
 
 const models = {
   User: sequelize.import('./user'),
