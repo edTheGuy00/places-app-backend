@@ -13,7 +13,7 @@ const server = new GraphQLServer({
   }),
 });
 
-models.sequelize.sync({ force: true }).then(() => {
+models.sequelize.sync().then(() => {
   server.start(() => console.log('Server is running on localhost:4000'));
 });
 

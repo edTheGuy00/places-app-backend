@@ -1,8 +1,8 @@
 export default (sequelize, DataTypes) => {
   const Place = sequelize.define('place', {
     placeId: DataTypes.STRING,
-    lat: DataTypes.DOUBLE,
-    lng: DataTypes.DOUBLE,
+    lat: DataTypes.FLOAT,
+    lng: DataTypes.FLOAT,
     name: DataTypes.STRING,
     image: DataTypes.STRING,
   });

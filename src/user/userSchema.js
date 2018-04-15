@@ -6,11 +6,11 @@ const userSchema = `
   }
 
   type Query {
-    me(phoneId: String): User!
+    me(phoneId: String!): User!
   }
 
   type Mutation {
-    newUser(phoneId: String): String!
+    newUser(phoneId: String!): String!
   }
 `;
 
