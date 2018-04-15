@@ -6,8 +6,12 @@
   "scripts": {
     "start": "nodemon --exec babel-node index.js"
   },
+  "engines": {
+    "node": "9.9.0",
+    "npm": "5.7.1"
+  },
   "author": "edTheGuy00",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.1",
