@@ -4,7 +4,9 @@
   "description": "graphql backend for a places app",
   "main": "index.js",
   "scripts": {
-    "start": "./node_modules/.bin/babel-node  index.js"
+    "serve": "node dist/index.js",
+    "build": "babel src -d dist",
+    "start": "nodemon --exec babel-node src/index.js"
   },
   "engines": {
     "node": "9.9.0",
@@ -14,6 +16,7 @@
   "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-stage-3": "^6.24.1",
     "eslint": "^4.19.1",
@@ -25,9 +28,7 @@
     "nodemon": "^1.17.3"
   },
   "dependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
-    "babel-preset-stage-3": "^6.24.1",
+    "babel-runtime": "^6.26.0",
     "graphql-yoga": "^1.8.5",
     "merge-graphql-schemas": "^1.5.1",
     "pg": "^7.4.1",
