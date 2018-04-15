@@ -1,5 +1,5 @@
 export default {
   Query: {
-    hello: (_, { name }) => `Hello ${name || 'World'}`,
+    allPlaces: (parent, args, { models }) => models.Place.findAll(),
   },
 };

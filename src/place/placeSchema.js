@@ -1,6 +1,14 @@
 const placeSchema = `
-type Query {
-    hello(name: String): String!
+  type Query {
+      allPlaces: [Place!]!
+  }
+
+  type Place {
+    placeId: String!
+    lat: Float!
+    lng: Float!
+    name: String!
+    image: String
   }
 `;
 

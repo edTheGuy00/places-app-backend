@@ -1,5 +1,5 @@
 export default {
   Query: {
-    hello: (_, { name }) => `Hello ${name || 'World'}`,
+    me: (_, { name }) => `Hello ${name || 'World'}`,
   },
 };

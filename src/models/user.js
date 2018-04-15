@@ -1,7 +1,11 @@
 export default (sequelize, DataTypes) => {
   const User = sequelize.define('user', {
-    phoneid: DataTypes.STRING,
+    phoneId: DataTypes.STRING,
   });
+
+  User.associate = (models) => {
+    models.User.hasMany(models.Place);
+  };
 
   return User;
 };

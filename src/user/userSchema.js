@@ -1,6 +1,6 @@
 const userSchema = `
 type Query {
-    hello(name: String): String!
+    me(name: String): String!
   }
 `;
 
