@@ -4,7 +4,14 @@ import models from './src/models';
 import typeDefs from './src/typeDefs';
 import resolvers from './src/resolvers';
 
-const server = new GraphQLServer({ typeDefs, resolvers });
+const server = new GraphQLServer({
+  typeDefs,
+  resolvers,
+  context: req => ({
+    ...req,
+    models,
+  }),
+});
 
 models.sequelize.sync({ force: true }).then(() => {
   server.start(() => console.log('Server is running on localhost:4000'));

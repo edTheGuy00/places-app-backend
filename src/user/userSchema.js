@@ -1,6 +1,16 @@
 const userSchema = `
-type Query {
-    me(name: String): String!
+
+  type User {
+    id: Int!
+    places: [Place!]
+  }
+
+  type Query {
+    me(phoneId: String): User!
+  }
+
+  type Mutation {
+    newUser(phoneId: String): String!
   }
 `;
 
