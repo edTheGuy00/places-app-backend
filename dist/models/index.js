@@ -15,8 +15,9 @@ var _sequelize2 = _interopRequireDefault(_sequelize);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var sequelize = new _sequelize2.default('dens2n6hcm9akh', 'rfulnxttizuctl', 'd32f1bcfc87d506a6b928621e31286953815f0897f8f6b990409128acda90069', {
-  native: true
-}, {
+  host: 'ec2-54-225-96-191.compute-1.amazonaws.com',
+  port: 5432,
+  native: true,
   dialect: 'postgres',
   operatorsAliases: _sequelize2.default.Op,
   define: {
