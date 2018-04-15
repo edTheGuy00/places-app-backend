@@ -1,6 +1,6 @@
 import Sequelize from 'sequelize';
 
-const sequelize = new Sequelize('placesapp', 'postgres', 'postgres', {
+const sequelize = new Sequelize('dens2n6hcm9akh', 'rfulnxttizuctl', 'd32f1bcfc87d506a6b928621e31286953815f0897f8f6b990409128acda90069', {
   dialect: 'postgres',
   operatorsAliases: Sequelize.Op,
   define: {
