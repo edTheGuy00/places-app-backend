@@ -4,7 +4,7 @@
   "description": "graphql backend for a places app",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --exec babel-node index.js"
+    "start": "--exec babel-node index.js"
   },
   "engines": {
     "node": "9.9.0",
